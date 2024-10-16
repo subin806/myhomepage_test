@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" a href="css/13.css">
+</head>
+
+<body>
+    <header>
+        <h1>조수빈의 홈페이지</h1>
+    </header>
+
+    <nav>
+        <a href="13.html">
+            <img src="image/icon.jpg" alt="집 모양 아이콘">
+        </a>
+        <div class="buttons">
+            <button onclick="location.href='login.html'">로그인</button>
+            <button onclick="location.href='signup.html'">회원가입</button>
+            <button onclick="location.href='mainpage.html'">메뉴소개</button>
+        </div>
+    </nav>
+
+    <div class="body_2">
+        <section class="login-section">
+            <h1>Sign Up</h1>
+            <form onsubmit="return handleSignUp()">
+                <form>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="confirmPassword">confirmPassword</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+                    <button class="button_1" type="submit">SignUp</button>
+                </form>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>2024 My Website</p>
+    </footer>
+<script src="js/sign.js"></script>
+</body>
+
+</html>
